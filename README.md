@@ -1,6 +1,6 @@
 # This is cron of CentOS provide docker-compose.
 
-リポジトリを pull 後、`docker` フォルダで `build & up` するだけで、cron が動き出します。
+リポジトリを `clone` 後、`docker` フォルダで `build & up` するだけで、cron が動き出します。
 デフォルトでは、実行時の日時をログファイルに書き込む処理が毎分実行されます。
 `cron/schedule` を編集し、`restartcron` 任意の処理を実行させることが可能です。
 
