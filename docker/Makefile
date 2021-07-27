@@ -21,3 +21,5 @@ up-stop-cron:
 	$(eval CONTAINER := $(LINUX))
 	$(eval ARG := -c "systemctl stop crond.service")
 	@$(UP) && $(EXEC)
+remove:
+	@$(DOWN) --rmi all --volumes --remove-orphans
